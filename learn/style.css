@@ -1,0 +1,49 @@
+       /* Style the password input field */
+       input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        background-color: #f9f9f9; /* Light gray background */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        position: relative;
+    }
+
+    /* Add an eye icon for password reveal */
+    .password-input i {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #666; /* Eye icon color */
+    }
+
+    /* Password strength requirements list */
+    .requirement-list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .requirement-list li {
+        margin-bottom: 5px;
+    }
+
+    .requirement-list li:before {
+        content: "\2022"; /* Bullet point symbol */
+        margin-right: 5px;
+        color: #ccc;
+    }
+
+    /* Highlight valid requirements in green */
+    .valid {
+        color: green;
+    }
+
+    /* Highlight invalid requirements in red */
+    .invalid {
+        color: red;
+    }
+    
